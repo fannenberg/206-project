@@ -97,7 +97,60 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   /***** BASE STYLES *****/
+
+  /* General Styles */
+
+  html {
+  	font-size: 16px;
+  }
+
+  body {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 1em;
+   text-align: left;
+   color: #e2e3ed;
+  }
+
+  ul, ol {
+    list-style-type: none;
+
+  }
+
+  a {
+  	color: #e2e3ed;
+    text-decoration: none;
+  }
+
+  h2 {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+   font-size: 1.875em;
+  }
+
+  h3, h4 {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+   margin: 20px 0;
+   font-size: 1.125em;
+  }
+
+  p {
+  	font-size: 0.875em;
+    line-height: 1.125;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  figure {
+
+  }
+
+  address {
+    font-style: normal;
+  }
+
    .content-wrapper{
      width: 90%;
      margin: 50px 0;
@@ -109,6 +162,7 @@ textarea {
        justify-content: center;
        align-items: center;
        flex-flow: row wrap;
+       background-color: #202322;
    }
 
    /***** Header Styles *****/
@@ -129,6 +183,7 @@ textarea {
      width: 100%;
      height: 1px;
      margin: 9px 0 19px 0;
+     background: #3a3a3a;
    }
 
    header nav {
@@ -137,16 +192,22 @@ textarea {
      align-items: center;
      flex-flow: row wrap;
      width: 60%;
+     font-size: 1.125em;
+     text-transform: uppercase;
    }
    header nav ul{
      display: flex;
      justify-content: space-around;
      width: 100%;
    }
+   header ul li{
+     font-size: 1.125em;
+   }
 
    /***** Footer Styles *****/
    footer{
      flex-direction: column;
+     text-align: center;
    }
    footer p{
      margin: 0;
@@ -180,12 +241,17 @@ textarea {
 
    }
 
+   .hero-area h1{
+     font-size: 2.25em;
+   }
+
    /***** Aside *****/
    aside {
      display: flex;
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     background-color: #527158;
    }
 
    aside .content-wrapper{
@@ -196,9 +262,30 @@ textarea {
 
    }
 
-   .form{
-
+   aside .form{
+     margin-top: 30px;
    }
+
+   input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+  }
+
+  input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
 
    /***** Features *****/
 
@@ -230,9 +317,11 @@ textarea {
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
+     background-color: #2a423a;
    }
-   .reviewa h2{
+   .reviews h2{
     margin-bottom: 40px;
+    line-height: 1;
    }
    .reviews h3{
      width: 55%;
@@ -245,6 +334,7 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     background-color: #527158;
    }
 
    .contact-section{
@@ -252,6 +342,7 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     background-color: #2a423a;
    }
 
    .content-section p{
@@ -264,6 +355,7 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     background-color: #527158;
    }
 
    .faq .content-wrapper{
@@ -276,10 +368,16 @@ textarea {
 
    .faq h2{
      margin-bottom: 40px;
+     line-height: 1;
    }
 
    .faq-content{
      margin-bottom: 50px;
+   }
+
+   .faq-content h4{
+     line-height: 1.333;
+     font-weight: 700;
    }
 
 /* ==========================================================================
@@ -379,6 +477,14 @@ textarea {
     max-width: 640px;
     margin: 100px 0;
   }
+  h2{
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+  h3{
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
 
   /*Header */
   header{
@@ -387,6 +493,9 @@ textarea {
   header .content-wrapper{
     width: 100%;
     justify-content: space-around;
+  }
+  header figure{
+    width: 100%;
   }
   header nav{
     width: 20%;
@@ -399,6 +508,11 @@ textarea {
   }
 
   /* Hero Area*/
+  .hero-area h1{
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+  }
 
   /*Aside: Newsletter*/
   aside .content-wrapper{
@@ -413,6 +527,9 @@ textarea {
   }
 
   /* Features */
+  .features h2{
+    margin: 0 20px 20px 0;
+  }
   .features article{
     display: flex;
     justify-content: center;
@@ -429,8 +546,15 @@ textarea {
     display: flex;
     justify-content: space-between;
   }
+  .reviews h2{
+    width: 90%
+  }
   .review article div {
     width: 49%;
+  }
+  .reviews h3{
+    width: 75%;
+    margin: 0;
   }
 
   /*Footer*/
@@ -445,6 +569,13 @@ textarea {
   }
   footer .contact{
     margin-bottom: 0;
+  }
+  footer h4{
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+  footer p{
+    line-height: 1.285;
   }
   footer .copyright{
     width: 100%;
@@ -468,6 +599,9 @@ textarea {
     justify-content: space-between;
     align-items: flex-start;
   }
+  .contact-content h4{
+    font-size: 1.5em;
+  }
 
   /***** Tablet FAQ page *****/
   .faq .content-wrapper{
@@ -479,6 +613,10 @@ textarea {
   .faq h2{
     width: 100%;
   }
+  .faq h4, .faq p{
+    font-size: 0.875em;
+    line-height: 1.125;
+  }
 }
 
 @media only screen and (min-width: 1200px){
@@ -486,10 +624,21 @@ textarea {
   .content-wrapper{
     max-width: 960px;
   }
+  h2{
+    font-size: 2.25em;
+  }
+  h3, h4{
+    font-size: 1.875em;
+  }
+  p{
+    font-size: 1.125em;
+    line-height: 1.333;
+  }
 
   /*Hero Area*/
   .hero-area h1{
     width: 60%;
+    font-size: 3.75em;
   }
 
   /* Aside */
@@ -498,6 +647,9 @@ textarea {
   }
   aside .content-wrapper .form-description, aside .content-wrapper .form{
     width: 30%;
+  }
+  .form-description{
+    font-size: 1.125em;
   }
 
   /*Features*/
@@ -516,17 +668,26 @@ textarea {
   /***** Desktop about page *****/
   .mission h2, .contact-section .content-wrapper h2{
     width: 100%;
+    font-size: 3em;
   }
   .contact-section .content-wrapper h2{
     margin-bottom: 40px;
+  }
+  .contact-content h4{
+    font-size: 1.875em;
   }
 
   /***** Desktop about page *****/
   .faq h2{
     width: 100%;
+    font-size: 3em;
   }
   .faq-content {
     flex-basis: 35%;
+  }
+  .faq h4, .faq p{
+    font-size: 1.125em;
+    line-height: 1;
   }
 }
 
