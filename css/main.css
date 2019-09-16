@@ -113,7 +113,8 @@ textarea {
 
   ul, ol {
     list-style-type: none;
-
+    margin: 0;
+    padding: 0;
   }
 
   a {
@@ -125,6 +126,7 @@ textarea {
    font-family: 'Poppins', sans-serif;
    font-weight: 500;
    font-size: 1.875em;
+   margin: 0;
   }
 
   h3, h4 {
@@ -136,7 +138,7 @@ textarea {
 
   p {
   	font-size: 0.875em;
-    line-height: 1.125;
+    line-height: 1.285;
   }
 
   img {
@@ -237,6 +239,13 @@ textarea {
      display: flex;
      justify-content: center;
      align-items: center;
+     background-color: #527158;
+     border-radius: 50%;
+     width: 40px;
+     height: 40px;
+   }
+   footer .social-icons p i{
+     font-size: 1.3125em;
    }
    footer .copyright{
      margin: 20px 0;
@@ -325,7 +334,12 @@ textarea {
      flex-flow: row wrap;
    }
    .features p{
+     text-align: center;
      margin: 0;
+   }
+   .features i{
+     font-size: 3.75em;
+     margin-bottom: 40px;
    }
 
    /***** Reviews *****/
@@ -357,7 +371,7 @@ textarea {
      position: relative;
      width: 100%;
      height: 0;
-     padding-bottom: 75%;
+     padding-bottom: 80%;
      overflow: hidden;
    }
    .map iframe{
@@ -365,7 +379,7 @@ textarea {
      top: 0;
      left: 0;
      width: 100%;
-     height: 100%;   
+     height: 100%;
    }
 
    .contact-section{
@@ -548,7 +562,7 @@ textarea {
   /*Aside: Newsletter*/
   aside .content-wrapper{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-flow: row wrap;
     margin: 50px 0;
   }
@@ -565,11 +579,15 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     flex-basis: 50%
   }
   .features .features-items-description{
     width: 50%;
+  }
+
+  .features i{
+    margin-bottom: 30px;
   }
 
   /* Reviews */
@@ -589,14 +607,15 @@ textarea {
   }
 
   /*Footer*/
-  .footer-wrapper{
+  footer .content-wrapper{
     width: 65%;
     margin: 100px 0;
   }
-  .footer-content{
+  footer .footer-content{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-flow: row;
   }
   footer .contact{
     margin-bottom: 0;
@@ -607,6 +626,10 @@ textarea {
   }
   footer p{
     line-height: 1.285;
+  }
+  footer .social-icons{
+    width: 12.5em;
+    justify-content: space-between;
   }
   footer .copyright{
     width: 100%;
@@ -621,6 +644,9 @@ textarea {
   }
   .mission-content p{
     width: 40%;
+  }
+  .map figure{
+    padding-bottom: 45.5%;
   }
   .contact-section .content-wrapper h2 {
     width: 80%;
@@ -693,10 +719,13 @@ textarea {
 
   /*Reviews*/
   .reviews article div{
-    width: 43%;
+    width: 42%;
   }
 
   /***** Desktop about page *****/
+  .map figure{
+    padding-bottom: 37.5%;
+  }
   .mission h2, .contact-section .content-wrapper h2{
     width: 100%;
     font-size: 3em;
@@ -708,7 +737,7 @@ textarea {
     font-size: 1.875em;
   }
 
-  /***** Desktop about page *****/
+  /***** Desktop FAQ page *****/
   .faq h2{
     width: 100%;
     font-size: 3em;
