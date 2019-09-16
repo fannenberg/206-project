@@ -144,7 +144,7 @@ textarea {
   }
 
   figure {
-
+    margin: 0;
   }
 
   address {
@@ -179,6 +179,14 @@ textarea {
      margin: 0;
    }
 
+   header figure{
+     width: 60%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+   }
+
    .header-divider{
      width: 100%;
      height: 1px;
@@ -187,12 +195,13 @@ textarea {
    }
 
    header nav {
+     width: 60%;
+     font-size: 1.125em;
+     font-weight: 700;
      display: flex;
      justify-content: space-around;
      align-items: center;
      flex-flow: row wrap;
-     width: 60%;
-     font-size: 1.125em;
      text-transform: uppercase;
    }
    header nav ul{
@@ -235,6 +244,10 @@ textarea {
    /* -------------------- Mobile Styles - Homepage -------------------- */
    /***** Hero Area *****/
    .hero-area{
+     background: url(../img/unplugged-retreat.jpg);
+     backgrounf-size: cover;
+     background-position: center;
+     min-height: 500px;
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
@@ -290,6 +303,9 @@ textarea {
    /***** Features *****/
 
    .features{
+     background: url(../img/unplugged-retreat-features.jpg);
+     background-size: cover;
+     background-position: center;
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
@@ -335,6 +351,21 @@ textarea {
      align-items: center;
      flex-flow: row wrap;
      background-color: #527158;
+   }
+
+   .map figure{
+     position: relative;
+     width: 100%;
+     height: 0;
+     padding-bottom: 75%;
+     overflow: hidden;
+   }
+   .map iframe{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;   
    }
 
    .contact-section{
@@ -495,7 +526,7 @@ textarea {
     justify-content: space-around;
   }
   header figure{
-    width: 100%;
+    width: 30%;
   }
   header nav{
     width: 20%;
